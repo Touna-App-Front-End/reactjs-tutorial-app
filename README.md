@@ -12,24 +12,24 @@ Document [https://simman.gitbooks.io/react-native-quickstart/content/Docs/Basics
   npm install
   ```
 
-2. 安装 jspm 
+2. 安装 jspm
 
   ```
-  npm install jspm --save-dev
+  npm install jspm -g
   ```
-  
+
   ```
   jspm install
   ```
 
-3. 安装 brower-sync
+3. 启动应用
 
   ```
-  npm install brower-sync
+  npm start
   ```
 
-4. 启动应用 
+4. 查看注释文档
 
   ```
-  browser-sync start --server --no-notify --files 'index.html, app/**/*.js'
+  npm run docs
   ```

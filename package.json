@@ -16,8 +16,15 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
+    "browser-sync": "^2.12.10",
+    "docker": "^0.2.14",
     "eslint": "^2.11.0",
     "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-react": "^5.1.1"
+    "eslint-plugin-react": "^5.1.1",
+    "jspm": "^0.16.35"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --no-notify --files 'index.html, app/**/*.js'",
+    "docs": "./node_modules/docker/docker -w -i app/ -o ./doc-pages "
   }
 }
